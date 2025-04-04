@@ -1,0 +1,150 @@
+Ideas para proyectos en html css y javascript 
+
+en html los botones de configuracion en una pagina ejemplo el de idioma o modo oscuro deberian ir en una listas (ul y li) o en otra forma 
+?
+
+
+para poner una pagia en version ingles y espa�ol se debe hacer una version del codigo en ambos idiomas o hay otra forma de hacerlo
+los botones 
+
+en html los botones de configuracion en una pagina ejemplo el de idioma o modo oscuro deberian ir en una listas (ul y li) o en otra forma 
+que proyetos de office deveria tener en mi portfolio 
+
+alternativas a usar un repositorio de git hub para poner el portafolios 
+
+PORTAFOLIO PARA DEVELOPERS
+
+Operador de Office Plus - Desarrollador Principiante 
+ 
+
+
+Web
+----------------------------------------------------------------------------------
+UX/UI
+Coherencia
+Uniformidad
+Responsive
+Paleta de colores
+Im�genes proporcionales
+Sinceridad Concisa
+Actualizada
+Navegaci�n continua
+Encontrar el tono de comunicaci�n
+Menos es m�s
+
+Obligatorio
+----------------------------------------------------------------------------------
+About me
+Nombre
+Habilidad principal
+
+Contacto
+Contacto (email)
+CV (pdf)
+que es portafoliio sea visible en mobile 
+Proyectus principales
+Chescripci�n, teensLagias, imagen, c�diga)
+Habilidades t�cnicas Categorizadas Sobre mi
+Experiencia laboral
+En calquier cam
+Formaci�n reglada (o no)
+Cheners, betting, cons, istodidacta ......
+
+Recomendable
+----------------------------------------------------------------------------------
+
+GitHub/LinkedIn
+Foto
+Otros proyectos
+Habilidades blandas
+Dominin personalizado Roles desempe�ados
+
+Opcional
+----------------------------------------------------------------------------------
+Dark/Light
+Traducci�n
+Depende de Lus sojaties Labers les
+Blog/articulos Aficiones
+Divulgaci�n Contribuciones
+�Qu� estoy aprendiendo?
+Reconacimientos
+Participaci�n en eventas
+Certificaciones
+Rese�as
+Idiomas
+
+Desaconsejado
+----------------------------------------------------------------------------------
+Redes sociales
+Que no tengan que ver con tu perfil
+Proyectos que no reflejan nuestro conocimiento o no tengan que ver con el puesto al que apuntamos
+Exceso de texto
+Exceso de conocimientos
+Redundancia
+Informaci�án irrevante 
+Exceso de animaciones
+
+@mouredey
+Explicaci�n en v�deo: https://mouredev.link/portafolio
+
+
+
+
+
+
+aspiro
+
+aprendiendo  
+
+Poyectos:
+calculadora 
+copiar pagina alguna sin ver el codio fuente 
+
+
+
+investigar:------------------
+method
+<form action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+
+como oponer un boton que al precionaro cambie de ingles a es��ol y viseversa 
+como hacer que una sola letra de una palaba en un titulo o parofao sea de un color diferente 
+
+
+
+
+
+justify-content: space-around;
+flex-flow: column-reverse wrap-reverse;
+align-content: space-between;
+
+align-items: stretch;
+
+order
+align-self
+
+
+
+flex-direction:------------------------
+flex-wrap------------------------------
+
+justify-content: space-around;
+align-items:center
+flex-flow: column-reverse wrap-reverse;
+align-content: space-between;
+
+justify-content: space-around;
+    align-items: center;
+    flex-flow: column-reverse wrap-reverse;
+    align-content: space-between;
+
+beauty devil femboy realistic
+female green lanter
+orc milf
+voodoo 
+ beauty big orc female tall 
+beauty female goblin
+
+busco mejorar pc sin afiliaciones personales 

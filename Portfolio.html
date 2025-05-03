@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Barcode+39&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="Portafoli.css">
+    <link rel="stylesheet" href="Portfolio.css">
 </head>
 <body>
     <header id="header" class="py-3">
@@ -227,104 +227,97 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"
     ></script>
-
-    <script>
-    let currentLang = 'es';
-
-    const translations = {
-        es: {
-            title: 'Mi Portafolio',
-            'nav-about': 'Sobre Mí',
-            'nav-projects': 'Proyectos',
-            'nav-skills': 'Habilidades',
-            'nav-contact': 'Contacto',
-            'name': 'Agustín Román',
-            'portfolio': 'Portafolio',
-            'about-title': 'Sobre Mí',
-            'about-desc': 'Hola, soy Agustín Román, actual operador de Office Plus y futuro desarrollador web.',
-            'projects-title': 'Proyectos',
-            'project1-title': 'Dashboar EN',
-            'project1-desc': 'Este dashboard interactivo ofrece una visión integral del rendimiento de ventas de calzado, centrándose especialmente en el análisis del diferencial de precios a lo largo del tiempo y entre diferentes modelos. Permite a los usuarios explorar datos de ventas por región, año y modelo, identificando tendencias y patrones significativos.',
-            'project1-view': 'Ver Mas',
-            'project1-download': 'Descargar',
-            'project2-title': 'Goals',
-            'project2-desc': 'Este proyecto de Excel permite visualizar datos y comparar el rendimiento frente a metas, usando gráficos y formato condicional para facilitar el análisis. El archivo contiene tres hojas:',
-            'project2-list': `
-                <li>Metas variables: Compara ventas reales vs. proyecciones por departamento.</li>
-                <li>Goal x2: Muestra el rendimiento por vendedor frente a metas mínima y óptima, con cambio de color según resultados.</li>
-                <li>Deliveries: Grafica los tiempos de entrega por ciudad, destacando los que superan el límite.</li>
-            `,
-            'project2-view': 'Ver Mas',
-            'project2-download': 'Descargar',
-            'project3-title': 'Dashboard ES',
-            'project3-desc': 'Este archivo de Excel contiene un dashboard dinámico que permite analizar el rendimiento de ventas desde distintas perspectivas. Está compuesto por gráficos visuales y segmentadores interactivos que facilitan el filtrado de datos por fecha, provincia, categoría y vendedor.',
-            'project3-view': 'Ver Mas',
-            'project3-download': 'Descargar',
-            'project4-title': 'Comisiones',
-            'project4-desc': 'Este proyecto de Excel está diseñado para calcular y asignar comisiones a vendedores, utilizando tanto tablas normales como tablas dinámicas (campo calculado).',
-            'project4-view': 'Ver Mas',
-            'project4-download': 'Descargar',
-            'project5-title': 'Formulario de registro de usuario',
-            'project5-desc': 'En este proyecto te presento un formulario de registro de usuario en excel creado usando VBA (Módulos, UserForm...)',
-        },
-        en: {
-            title: 'My Portfolio',
-            'nav-about': 'About Me',
-            'nav-projects': 'Projects',
-            'nav-skills': 'Skills',
-            'nav-contact': 'Contact',
-            'name': 'Agustín Román',
-            'portfolio': 'Portfolio',
-            'about-title': 'About Me',
-            'about-desc': 'Hi, I\'m Agustín Román, currently working at Office Plus and future web developer.',
-            'projects-title': 'Projects',
-            'project1-title': 'Dashboard EN',
-            'project1-desc': 'This interactive dashboard provides an overview of footwear sales performance, focusing on price differential analysis over time and across models. Users can explore sales data by region, year, and model, identifying key trends.',
-            'project1-view': 'View More',
-            'project1-download': 'Download',
-            'project2-title': 'Goals',
-            'project2-desc': 'This Excel project allows users to view and compare performance against goals using charts and conditional formatting. It contains three sheets:',
-            'project2-list': `
-                <li>Variable Goals: Compares real sales vs. projections by department.</li>
-                <li>Goal x2: Shows seller performance against minimum and optimal goals, with color changes depending on results.</li>
-                <li>Deliveries: Graphs delivery times by city, highlighting those above the limit.</li>
-            `,
-            'project2-view': 'View More',
-            'project2-download': 'Download',
-            'project3-title': 'Dashboard ES',
-            'project3-desc': 'This Excel file includes a dynamic dashboard for analyzing sales performance. It contains charts and slicers to filter by date, province, category, and seller.',
-            'project3-view': 'View More',
-            'project3-download': 'Download',
-            'project4-title': 'Commissions',
-            'project4-desc': 'This Excel project calculates and assigns commissions using both regular and pivot tables (calculated field).',
-            'project4-view': 'View More',
-            'project4-download': 'Download',
-            'project5-title': 'User Registration Form',
-            'project5-desc': 'This project shows a user registration form in Excel created using VBA (Modules, UserForm...)',
-        }
-    };
-
-    document.getElementById('lang-toggle').addEventListener('click', () => {
-        currentLang = currentLang === 'es' ? 'en' : 'es';
-        const texts = translations[currentLang];
-
-        for (const id in texts) {
-            const el = document.getElementById(id);
-            if (el) {
-                if (id === 'project2-list') {
-                    el.innerHTML = texts[id]; // para listas
-                } else {
-                    el.textContent = texts[id]; // para textos normales
-                }
-            }
-        }
-
-        document.getElementById('lang-toggle').textContent = currentLang === 'es' ? 'English' : 'Español';
-    });
-</script>
-
     
-
-
+    <script>
+        const langToggle = document.getElementById('lang-toggle');
+                let currentLang = 'es';
+            
+                // Establecer el texto inicial del botón
+                langToggle.textContent = currentLang === 'es' ? 'English' : 'Español';
+            
+                langToggle.addEventListener('click', () => {
+                    const isSpanish = currentLang === 'es';
+            
+                    document.documentElement.lang = isSpanish ? 'en' : 'es';
+                    document.querySelector('#about-title').textContent = isSpanish ? 'About Me' : 'Sobre Mí';
+                    document.querySelector('#projects-title').textContent = isSpanish ? 'Projects' : 'Proyectos';
+                    document.querySelector('#skills-title').textContent = isSpanish ? 'Skills' : 'Habilidades';
+                    document.querySelector('#contact-title').textContent = isSpanish ? 'Contact' : 'Contacto';
+                    document.querySelector('#about p').textContent = isSpanish
+                        ? "Hi, I'm Agustín Román, current Office Plus operator and future web developer."
+                        : "Hola, soy Agustín Román, actual operador de Office Plus y futuro desarrollador web.";
+                    document.querySelector('h1.name').textContent = 'Agustín Román';
+                    document.querySelector('h6.port').textContent = isSpanish ? 'Portfolio' : 'Portafolio';
+            
+                    // Navbar
+                    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+                    navLinks[0].textContent = isSpanish ? 'About Me' : 'Sobre Mí';
+                    navLinks[1].textContent = isSpanish ? 'Projects' : 'Proyectos';
+                    navLinks[2].textContent = isSpanish ? 'Skills' : 'Habilidades';
+                    navLinks[3].textContent = isSpanish ? 'Contact' : 'Contacto';
+            
+                    // Proyectos
+                    document.querySelector('#project1-desc').textContent = isSpanish
+                        ? 'This interactive dashboard provides a comprehensive view of footwear sales performance, focusing on price differential analysis over time and across models. It allows users to explore sales data by region, year, and model, identifying trends and patterns.'
+                        : 'Este dashboard interactivo ofrece una visión integral del rendimiento de ventas de calzado, centrándose especialmente en el análisis del diferencial de precios a lo largo del tiempo y entre diferentes modelos. Permite a los usuarios explorar datos de ventas por región, año y modelo, identificando tendencias y patrones significativos.';
+            
+                    document.querySelector('#project2-desc').innerHTML = isSpanish
+                        ? `This Excel project allows you to visualize and compare performance against goals using charts and conditional formatting. The file has three sheets:
+                            <ul>
+                                <li>Variable Goals: Compares actual sales vs. projections by department.</li>
+                                <li>Goal x2: Shows sales performance against minimum and optimal targets, using color changes based on results.</li>
+                                <li>Deliveries: Charts delivery times by city, highlighting those exceeding the limit.</li>
+                            </ul>`
+                        : `Este proyecto de Excel permite visualizar datos y comparar el rendimiento frente a metas, usando gráficos y formato condicional para facilitar el análisis. El archivo contiene tres hojas:
+                            <ul>
+                                <li>Metas variables: Compara ventas reales vs. proyecciones por departamento.</li>
+                                <li>Goal x2: Muestra el rendimiento por vendedor frente a metas mínima y óptima, con cambio de color según resultados.</li>
+                                <li>Deliveries: Grafica los tiempos de entrega por ciudad, destacando los que superan el límite.</li>
+                            </ul>`;
+            
+                    document.querySelector('#project3-desc').textContent = isSpanish
+                        ? 'This Excel file contains a dynamic dashboard that allows you to analyze sales performance from different perspectives. It includes visual charts and interactive slicers to filter data by date, province, category, and salesperson.'
+                        : 'Este archivo de Excel contiene un dashboard dinámico que permite analizar el rendimiento de ventas desde distintas perspectivas. Está compuesto por gráficos visuales y segmentadores interactivos que facilitan el filtrado de datos por fecha, provincia, categoría y vendedor.';
+            
+                    document.querySelector('#project4-desc').textContent = isSpanish
+                        ? 'This Excel project is designed to calculate and assign commissions to salespeople using both standard and pivot tables (calculated fields).'
+                        : 'Este proyecto de Excel está diseñado para calcular y asignar comisiones a vendedores, utilizando tanto tablas normales como tablas dinámicas (campo calculado).';
+            
+                    document.querySelector('#project5-desc').innerHTML = isSpanish
+                        ? `In this project, I present a user registration form in Excel created using VBA (Modules, UserForm, and data validation in some fields). 
+                           <br> The form is launched by pressing the button, and after filling it out, you press SAVE to send the data to the "registro" table on the DATA sheet (all fields are required except Phone Number in this case).`
+                        : `En este proyecto te presento un formulario de registro de usuario en excel creado usando VBA (Módulos, UserForm y validación de datos en algunos campos). 
+                           <br> El formulario se inicia al presionar el botón y luego de rellenar el formulario presionar SAVE para enviar los datos a la tabla registro de la hoja DATA (todos los campos son obligatorios excepto Phone Number en este caso).`;
+            
+                    // Botones Ver Más y Descargar
+                    const buttonsVerMas = document.querySelectorAll('a.btn:contains("Ver Mas"), a.btn:contains("See More")');
+                    const buttonsDescargar = document.querySelectorAll('a.btn:contains("Descargar"), a.btn:contains("Download")');
+            
+                    buttonsVerMas.forEach(btn => btn.textContent = isSpanish ? 'See More' : 'Ver Mas');
+                    buttonsDescargar.forEach(btn => btn.textContent = isSpanish ? 'Download' : 'Descargar');
+            
+                    // Cambiar texto del botón *antes* de actualizar currentLang
+                    langToggle.textContent = isSpanish ? 'Español' : 'English';
+                    currentLang = isSpanish ? 'en' : 'es';
+                });
+            
+                // Helper para seleccionar texto dentro del botón
+                (function(){
+                    if (!Element.prototype.matches) {
+                        Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
+                    }
+                    if (!Element.prototype.closest) {
+                        Element.prototype.closest = function(s) {
+                            var el = this;
+                            do {
+                                if (el.matches(s)) return el;
+                                el = el.parentElement || el.parentNode;
+                            } while (el !== null && el.nodeType === 1);
+                            return null;
+                        };
+                    }
+                })();
+            
+    </script>    
 </body>
 </html>

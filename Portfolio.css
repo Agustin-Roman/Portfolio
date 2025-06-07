@@ -1,3 +1,7 @@
+/* delete */
+/* .segoe-black {
+    font-family: 'Segoe UI Black', 'Segoe UI', sans-serif;
+} */
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
@@ -42,7 +46,7 @@ section {
     padding: 2rem 1rem;
 }
 
-#about, #projects, #skills {
+#about, #projects, #skills, #experience {
     background: #f7f7f7;
     margin: 1rem 0;
 }
@@ -90,10 +94,14 @@ footer {
   
   /* Tamaño de los íconos */
   .contact-icon {
-    width: 24px;
-    height: 24px;
+    width: 30PX;
+    height: 30PX;
   }
-  
+  .contact-icono {
+    width: 35PX;
+    height: 35PX;
+  }
+
   /* Estilizar el texto */
   .contact-text {
     font-size: 1rem;
@@ -115,8 +123,9 @@ footer {
     text-decoration: none;
     color: white;
   }
-
+/* 
   h2,h1 {
     font-family: 'Segoe UI', sans-serif;
 }
 
+ */

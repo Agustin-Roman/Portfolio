@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Mi Portafolio</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Barcode+39&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Portfolio.css">
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    
+</head>
+<body>
+    <header id="header" class="py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark"> <div class="container-fluid">
+
+                <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+<!--                         <li class="nav-item"><a id="nav-about" class="nav-link" href="#about">Sobre Mí</a></li> -->
+                        <li class="nav-item"><a id="nav-projects" class="nav-link" href="#projects">Proyectos</a></li>
+                        <li class="nav-item"><a id="nav-skills" class="nav-link" href="#skills">Habilidades</a></li>
+                        <li class="nav-item"><a id="nav-contact" class="nav-link" href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="text-center">
+            <div class="d-flex align-items-center justify-content-center">
+                <button id="lang-toggle" 
+                class="btn btn-outline-light"
+                style="--bs-btn-padding-y: 0.1rem;"
+                >English</button>
+            </div>
+
+            <h1 id="name" class="name">Agustín Román</h1>
+            <h6 id="portfolio" class="port">Portafolio</h6>
+        </div>
+    </header>
+
+
+    <section id="about" class="py-4">
+        <div class="container-fluid">
+            <h2 id="about-title">Sobre Mí</h2>
+            <p id="about-desc">
+                Busco mejores oportunidades de trabajo online a través de Freelancer para adquirir experiencia y crecer profesionalmente.<br>
+                Tengo la disponibilidad necesaria para concentrarme plenamente en mi primer trabajo y una buena organización para afrontar futuros proyectos con la misma energía y compromiso.<br>
+                Tengo experiencia en la enseñanza y el uso de herramientas de Microsoft Office (Word, Excel, Publisher, etc.), así como conocimientos de organización digital y gestión de archivos.<br>
+                Si te interesa lo que ves aquí, hablemos y veamos si podemos hacer algo.
+            </p>
+
+        </div>
+    </section>
+    <section id="experience" class="py-4">
+        <div class="container-fluid">
+            <h2 id="experience-title">Experiencia laboral</h2>
+
+            <div class="experience-item">
+                <h4 id="experience-role-1">Freelancer.com</h4>
+                <p id="experience-text-1">
+                    Present<br>
+                    <!-- Freelancer.com -->
+                </p>
+            </div>
+
+            <div class="experience-item">
+                <h5 id="experience-role-2" class="segoe-black">Técnico Electricista + Electrónicos + Informática</h5>
+                <p id="experience-text-2">
+                    2023 – 2025<br>
+                    Instalaciones y reparaciones eléctricas a particulares.<br>
+                    Reparación y mantenimiento de sistemas eléctricos.<br>
+                    Mantenimiento de PC, instalación de programas, configuración de sistemas.<br>
+                    Soporte técnico general.
+                </p>
+            </div>
+
+            <div class="experience-item">
+                <h5 id="experience-role-3">Profesor de informática – Office y Secretariado Administrativo</h5>
+                <p id="experience-text-3">
+                    2020 – 2023<br>
+                    Clases personalizadas para adultos y jóvenes, adaptadas al nivel de conocimiento inicial.<br>
+                    Enseñanza práctica de herramientas como Microsoft Word, Excel, PowerPoint y gestión de archivos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="py-4 bg-light">
+        <div class="container-fluid ">
+            <h2 id="projects-title">Proyectos</h2>
+            <div class="row d-flex flex-nowrap overflow-auto " >
+                <div class="col-md-6" >
+                    <div class="card" >
+                        <div class="ratio ratio-16x9">
+                            <img src="imgs/i1.png"
+                                alt="Vista previa del proyecto"
+                                class="img-fluid rounded border-bottom border-success border-2">
+                        </div>
+                        <div class="card-body ">
+                            <h3 id="project1-title" class="card-title">Dashboar EN</h3>
+                            <p id="project1-desc" class="card-text">Este dashboard interactivo ofrece una visión integral del rendimiento de ventas de calzado, centrándose especialmente en el análisis del diferencial de precios a lo largo del tiempo y entre diferentes modelos. Permite a los usuarios explorar datos de ventas por región, año y modelo, identificando tendencias y patrones significativos.</p>
+                            <a id="project1-view" href="https://1drv.ms/x/c/2a1a6c2cd28e6fac/ERS8eP1ku8RIlVOPqJdyZkwB3mSFkZVJcayp6p6pPj2_LA?e=kJFTOu" target="_blank"
+                                 class="btn btn-outline-dark"
+                                 style="--bs-btn-padding-y: 0.15rem;">
+                                 Ver Mas</a>
+                            <a id="project1-download" href="https://docs.google.com/spreadsheets/d/1b7Y2659U7kkAK21I3Dh_P2-VI84EUgTU/export?format=xlsx" target="_blank"
+                                 class="btn btn-outline-dark"
+                                 style="--bs-btn-padding-y: 0.15rem;">
+                                 Descargar</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 " >
+                    <div class="card " >
+                        <div class="ratio ratio-16x9">
+                            <img src="imgs/i2.png"
+                                alt="Vista previa del proyecto"
+                                class="img-fluid rounded border-bottom border-success border-2">
+                        </div>
+                        <div class="card-body">
+                            <h3 id="project2-title" class="card-title">Goals</h3>
+                            <p id="project2-desc">Este proyecto de Excel permite visualizar datos y comparar el rendimiento frente a metas, usando gráficos y formato condicional para facilitar el análisis. El archivo contiene tres hojas:</p>
+                            <ul id="project2-list">
+                                <li>Metas variables: Compara ventas reales vs. proyecciones por departamento.</li>
+                                <li>Goal x2: Muestra el rendimiento por vendedor frente a metas mínima y óptima, con cambio de color según resultados.</li>
+                                <li>Deliveries: Grafica los tiempos de entrega por ciudad, destacando los que superan el límite.</li>
+                            </ul>
+
+                            <a id="project2-view" href="https://1drv.ms/x/c/2a1a6c2cd28e6fac/EVqk2_e9oVJMvvIGQCyr6cYB4DdnBjujMX83Gax_m0y_Nw?e=Ne1zuq" target="_blank"
+                                 class="btn btn-outline-dark"
+                                 style="--bs-btn-padding-y: 0.1rem;"> Ver Mas
+                            </a>
+                            <a id="project2-download" href="https://docs.google.com/spreadsheets/d/13dZ4Xvtu50JA5iFbmNhyczqzgBtbuKaD/export?format=xlsx" target="_blank"
+                                 class="btn btn-outline-dark"
+                                 style="--bs-btn-padding-y: 0.15rem;">
+                                 Descargar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 " >
+                    <div class="card " >
+                        <div class="ratio ratio-16x9">
+                            <img src="imgs/i3.png"
+                                alt="Vista previa del proyecto"
+                                class="img-fluid rounded border-bottom border-success border-2">
+                        </div>
+                        <div class="card-body">
+                            <h3 id="project3-title" class="card-title">Dashboard ES</h3>
+                            <p id="project3-desc" class="card-text">Este archivo de Excel contiene un dashboard dinámico que permite analizar el rendimiento de ventas desde distintas perspectivas. Está compuesto por gráficos visuales y segmentadores interactivos que facilitan el filtrado de datos por fecha, provincia, categoría y vendedor.
+                            </p>
+                            <a id="project3-view" href="https://1drv.ms/x/c/2a1a6c2cd28e6fac/ERcayaJoHUVPnrJGbVGmXA0B_8nM-hJVaC2MQmgGQVHopg?e=3EXPS0" target="_blank"
+                               class="btn btn-outline-dark"
+                               style="--bs-btn-padding-y: 0.15rem;">
+                               Ver Mas</a>
+                            <a id="project3-download" href="https://docs.google.com/spreadsheets/d/1l3aS6OvEb01B2RAKdNXh0AmIXZOuddP_/export?format=xlsx" target="_blank"
+                               class="btn btn-outline-dark"
+                               style="--bs-btn-padding-y: 0.15rem;">
+                               Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card ">
+                        <div class="ratio ratio-16x9">
+                            <img src="imgs/i4.png"
+                                alt="Vista previa del proyecto"
+                                class="img-fluid rounded border-bottom border-success border-2">
+                        </div>
+                        <div class="card-body">
+                            <h3 id="project4-title" class="card-title">Comisiones</h3>
+                            <p id="project4-desc" class="card-text">Este proyecto de Excel está diseñado para calcular y asignar comisiones a vendedores, utilizando tanto tablas normales como tablas dinámicas (campo calculado).</p>
+                            <a id="project4-view" href="https://1drv.ms/x/c/2a1a6c2cd28e6fac/EWF8nsHpE_hIttPLJpRHg-YBb9RTL367XHUrEDDfCPnyyQ?e=WTkXPL" target="_blank"
+                                 class="btn btn-outline-dark"
+                                 style="--bs-btn-padding-y: 0.15rem;">
+                                 Ver Mas</a>
+                            <a id="project4-download" href="https://docs.google.com/spreadsheets/d/1Ki1Y_VibDDbYfnASTcOl7ztTYVvvndS2/export?format=xlsx" target="_blank"
+                                 class="btn btn-outline-dark"
+                                 style="--bs-btn-padding-y: 0.15rem;">
+                                 Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card ">
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                 class="img-fluid rounded border-bottom border-success border-2"
+                                 src="https://www.youtube.com/embed/BduXnni1vmA?si=vbTVpeisJV8rG3Ol"
+                                 title="YouTube video player"
+                                 frameborder="0"
+                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                 referrerpolicy="strict-origin-when-cross-origin"
+                                 allowfullscreen
+                                 >
+                            </iframe>
+                        </div>
+                        <div class="card-body">
+                            <h3 id="project5-title" class="card-title">Formulario de registro de usuario</h3>
+                            <p id="project5-desc" class="card-text">
+                                En este proyecto te presento un formulario de registro de usuario en excel creado usando VBA (Módulos, UserForm y validaion de datos en algunos campos).
+                                <br> El formulario se inicia al presionar el botón y luego de rellenar el formulario presionar SAVE para enviar los datos a la tabla registro de la hoja DATA (todos los campos son obligatorios excepto Phone Number en este caso).
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-4">
+        <div class="container-fluid">
+            <h2 id="skills-title">Habilidades</h2> <!-- class="h4 mb-3" -->
+            <div> 
+                <p id="skills-desc">Voz, Audio, Vídeo e Imagen a texto - Texto a voz</p>
+            </div>
+            <!-- Habilidades Fuertes -->
+            <div class="mb-4">
+                <h3 class="h5 mb-2" id="skills-strong">Fuertes</h3>
+                <div class="d-flex flex-wrap gap-4">
+                    <div class="text-center">
+                        <img src="imgs/office-365.svg" alt="Microsoft Office" class="fs-1">
+                        <div class="small text-center">Office</div>
+                    </div>
+                    <!-- 
+                    <div class="text-center">
+                        <img src="imgs/google.svg" alt="Google Workspace" class="fs-1">
+                        <div class="small text-center">Workspace</div>
+                    </div> -->
+                    <div class="text-center">
+                        <img src="imgs/excel.svg" alt="Excel" class="fs-1">
+                        <div class="small text-center">Excel</div>
+                    </div>
+                    <div class="text-center">
+                        <img src="imgs/openai.svg" width="48" height="48" alt="ChatGPT" class="fs-1">
+                        <div class="small text-center">ChatGPT</div>
+                    </div>
+                    <!-- 
+                    <div class="text-center">
+                        <img src="imgs/vba.svg" width="48" height="48" alt="IA" class="fs-1">
+                        <div class="small text-center">VB for App</div>
+                    </div>
+                     -->
+                </div>
+            </div>
+            
+      
+          <!-- Habilidades Principiante -->
+          <div class="mb-4">
+            <h3 class="h5 mb-2" id="skills-beginner">Principiante</h3>
+            <div class="d-flex flex-wrap gap-4">
+              <div class="text-center">
+                <img src="imgs/html5.svg" alt="HTML5" class="fs-1">
+                <div class="small text-center">HTML5</div>
+              </div>
+              <div class="text-center">
+                <img src="imgs/css3.svg" alt="CSS3" class="fs-1">
+                <div class="small text-center">CSS3</div>
+              </div>
+              <div class="text-center">
+                <img src="imgs/bootstrap.svg" alt="Bootstrap" class="fs-1">
+                <div class="small text-center">Bootstrap</div>
+              </div>
+              <div class="text-center">
+                <img src="imgs/python.svg" alt="Python" class="fs-1">
+                <div class="small text-center">Python</div>
+              </div>
+              <div class="text-center">
+                <img src="imgs/mysqlworkbench.svg" width="48" height="48" alt="GitHub" class="fs-1">
+                <div class="small text-center">Workbench</div>
+              </div>
+              <!-- <div class="text-center">
+                <img src="imgs/github.svg"  width="48" height="48" alt="GitHub" class="fs-1">
+                <div class="small text-center">GitHub</div>
+              </div> -->
+            </div>
+          </div>
+          
+      
+          <!-- Otras Habilidades -->
+          <div class="mb-4">
+            <h3 class="h5 mb-2" id="skills-other">Otras</h3>
+            <div class="d-flex flex-wrap gap-4">
+              <!-- 
+              <div class="text-center">
+                <img src="https://cdn.simpleicons.org/zoom" width="48" height="48" alt="Zoom">
+                <div class="small">Zoom</div>
+              </div>
+              <div class="text-center">
+                <img src="https://cdn.simpleicons.org/discord" width="48" height="48" alt="Discord">
+                <div class="small">Discord</div>
+              </div>
+              <div class="text-center">
+                <img src="https://cdn.simpleicons.org/googlemeet" width="48" height="48" alt="Google Meet">
+                <div class="small">Meet</div>
+              </div> 
+              <div class="text-center">
+                <img src="https://cdn.simpleicons.org/protondrive" width="48" height="48" alt="Proton Drive">
+                <div class="small">Proton Drive</div>
+              </div>
+              -->
+              <div class="text-center">
+                <img src="imgs/trello.svg" width="48" height="48" alt="Trello">
+                <div class="small">Trello</div>
+              </div>
+              
+              <div class="text-center">
+                <img src="imgs/anydesk.svg" width="48" height="48" alt="AnyDesk">
+                <div class="small">AnyDesk</div>
+              </div>
+              <div class="text-center">
+                <img src="imgs/teamviewer.svg" width="48" height="48" alt="TeamViewer">
+                <div class="small">TeamViewer</div>
+              </div>
+              <div class="text-center">
+                <img src="imgs/camtasia-studio.svg" alt="Camtasia">
+                <div class="small">Camtasia</div>
+              </div>
+              <div class="text-center">
+                <img src="imgs/drawio.svg" width="48" height="48" alt="draw.io">
+                <div class="small">Draw.io</div>
+              </div>
+              <div class="text-center">
+                <img src="imgs/whisk.svg" width="48" height="48" alt="Whisk">
+                <div class="small">Whisk</div>
+              </div>
+              
+            </div>
+          </div>
+
+    
+            
+        </div>
+    </section>
+
+
+
+<footer id="contact" class="footer py-4">
+    <div class="container">
+        <div class="contac">
+            <h5 id="contact-title">Contacto</h5>
+            <ul class="list-unstyled d-flex justify-content-center mt-3">
+                <li class="contact-item mx-3">
+                <img src="imgs/phone.png" alt="Teléfono" class="contact-icon">
+                <span class="contact-text">+5493625353747</span>
+                </li>
+                <li class="contact-item mx-3">
+                <img src="imgs/email.png" alt="Email" class="contact-icon">
+                <span class="contact-text">romanagustinuser@gmail.com</span>
+                </li>
+                <li class="contact-item mx-3">
+                <img src="imgs/octocat.svg" alt="GitHub" class="contact-icono">
+                <a href="https://github.com/Agustin-Roman" class="contact-text text-white" target="_blank">https://github.com/Agustin-Roman</a>
+                </li>
+            </ul>
+        </div>
+        <div class="start col-md-4 mx-auto">
+            <a href="#header">
+                <img src="imgs/arrow-up.png" alt="arrow" width="25" height="25" class="mb-2">
+            </a>
+        </div>
+        <!-- Créditos -->
+        <div class="text-center mt-3">
+            <small class="text-white">Icons by <a href="https://icons8.com" target="_blank" class="text-white text-decoration-underline">Icons8</a></small>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+></script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+></script>
+
+<script>
+    let currentLang = 'es';
+
+const translations = {
+    es: {
+        title: 'Mi Portafolio',
+        'nav-about': 'Sobre Mí',
+        'nav-projects': 'Proyectos',
+        'nav-skills': 'Habilidades',
+        'nav-contact': 'Contacto',
+        'name': 'Agustín Román',
+        'portfolio': 'Portafolio',
+
+        // SOBRE MÍ
+        'about-title': 'Sobre Mí',
+        'about-desc': `
+            Busco mejores oportunidades de trabajo online a través de Freelancer para adquirir experiencia y crecer profesionalmente.<br>
+            Tengo la disponibilidad necesaria para concentrarme plenamente en mi primer trabajo y una buena organización para afrontar futuros proyectos con la misma energía y compromiso.<br>
+            Tengo experiencia en la enseñanza y el uso de herramientas de Microsoft Office (Word, Excel, Publisher, etc.), así como conocimientos de organización digital y gestión de archivos.<br>
+            Si te interesa lo que ves aquí, hablemos y veamos si podemos hacer algo.
+        `,
+
+        // PROYECTOS
+        'projects-title': 'Proyectos',
+
+        'project1-title': 'Dashboar EN',
+        'project1-desc': 'Este dashboard interactivo ofrece una visión integral del rendimiento de ventas de calzado, centrándose especialmente en el análisis del diferencial de precios a lo largo del tiempo y entre diferentes modelos. Permite a los usuarios explorar datos de ventas por región, año y modelo, identificando tendencias y patrones significativos.',
+        'project1-view': 'Ver Más',
+        'project1-download': 'Descargar',
+
+        'project2-title': 'Goals',
+        'project2-desc': 'Este proyecto de Excel permite visualizar datos y comparar el rendimiento frente a metas, usando gráficos y formato condicional para facilitar el análisis. El archivo contiene tres hojas:',
+        'project2-list': `
+            <li>Metas variables: Compara ventas reales vs. proyecciones por departamento.</li>
+            <li>Goal x2: Muestra el rendimiento por vendedor frente a metas mínima y óptima, con cambio de color según resultados.</li>
+            <li>Deliveries: Grafica los tiempos de entrega por ciudad, destacando los que superan el límite.</li>
+        `,
+        'project2-view': 'Ver Más',
+        'project2-download': 'Descargar',
+
+        'project3-title': 'Dashboard ES',
+        'project3-desc': `
+            Este archivo de Excel contiene un dashboard dinámico que permite analizar el rendimiento de ventas desde distintas perspectivas. 
+            Está compuesto por gráficos visuales y segmentadores interactivos que facilitan el filtrado de datos por fecha, provincia, categoría y vendedor.
+        `,
+        'project3-view': 'Ver Más',
+        'project3-download': 'Descargar',
+
+        'project4-title': 'Comisiones',
+        'project4-desc': 'Este proyecto de Excel está diseñado para calcular y asignar comisiones a vendedores, utilizando tanto tablas normales como tablas dinámicas (campo calculado).',
+        'project4-view': 'Ver Más',
+        'project4-download': 'Descargar',
+
+        'project5-title': 'Formulario de registro de usuario',
+        'project5-desc': `
+            En este proyecto te presento un formulario de registro de usuario en Excel creado usando VBA (Módulos, UserForm y validación de datos en algunos campos).
+            El formulario se inicia al presionar el botón y luego de rellenar el formulario presionar SAVE para enviar los datos a la tabla registro de la hoja DATA 
+            (todos los campos son obligatorios excepto Phone Number en este caso).
+        `,
+        'project5-view': 'Ver Más',
+        'project5-download': 'Descargar',
+
+        // HABILIDADES
+        'skills-title': 'Habilidades',
+        'skills-desc': 'Voz, Audio, Vídeo e Imagen a texto - Texto a voz',
+        'skills-strong': 'Fuertes',
+        'skills-beginner': 'Principiante',
+        'skills-other': 'Otros',
+
+        // EXPERIENCIA
+        'experience-title': 'Experiencia laboral',
+        'experience-role-2': 'Técnico Electricista + Electrónicos + Informática',
+        'experience-text-2': `2023 – 2025<br> Instalaciones y reparaciones eléctricas a particulares.<br> Reparación y mantenimiento de sistemas eléctricos.<br> Mantenimiento de PC, instalación de programas, configuración de sistemas.<br> Soporte técnico general.`,
+        'experience-role-3': 'Profesor de informática',
+        'experience-text-3': `2020 – 2023<br>
+            Clases personalizadas para adultos y jóvenes, adaptadas al nivel de conocimiento inicial.<br>
+            Enseñanza práctica de herramientas como Microsoft Word, Excel, PowerPoint y gestión de archivos.
+        `,
+
+        // CONTACTO
+        'contact-title': 'Contacto'
+    },
+
+    en: {
+        title: 'My Portfolio',
+        'nav-about': 'About Me',
+        'nav-projects': 'Projects',
+        'nav-skills': 'Skills',
+        'nav-contact': 'Contact',
+        'name': 'Agustín Román',
+        'portfolio': 'Portfolio',
+
+        // ABOUT ME
+        'about-title': 'About Me',
+        'about-desc': `
+            I'm looking for better opportunities in online work through Upwork, aiming to add experience and grow professionally.<br>
+            I have the necessary availability to focus fully on the first job, and good organization to face future projects with the same energy and commitment.<br>
+            I have experience teaching and using Microsoft Office tools (Word, Excel, Publisher, etc.) as well as knowledge of digital organization and file management.<br>
+            If you are interested in what you see here, let's talk and see if we can achieve something together.
+        `,
+
+        // PROJECTS
+        'projects-title': 'Projects',
+
+        'project1-title': 'Dashboard EN',
+        'project1-desc': 'This interactive dashboard provides an overview of footwear sales performance, focusing on price differential analysis over time and across models. Users can explore sales data by region, year, and model, identifying key trends.',
+        'project1-view': 'View More',
+        'project1-download': 'Download',
+
+        'project2-title': 'Goals',
+        'project2-desc': 'This Excel project allows users to view and compare performance against goals using charts and conditional formatting. It contains three sheets:',
+        'project2-list': `
+            <li>Variable Goals: Compares real sales vs. projections by department.</li>
+            <li>Goal x2: Shows seller performance against minimum and optimal goals, with color changes depending on results.</li>
+            <li>Deliveries: Graphs delivery times by city, highlighting those above the limit.</li>
+        `,
+        'project2-view': 'View More',
+        'project2-download': 'Download',
+
+        'project3-title': 'Dashboard ES',
+        'project3-desc': `
+            This Excel file includes a dynamic dashboard for analyzing sales performance from different perspectives. 
+            It contains charts and slicers to filter by date, province, category, and seller.
+        `,
+        'project3-view': 'View More',
+        'project3-download': 'Download',
+
+        'project4-title': 'Commissions',
+        'project4-desc': 'This Excel project calculates and assigns commissions using both regular and pivot tables (calculated field).',
+        'project4-view': 'View More',
+        'project4-download': 'Download',
+
+        'project5-title': 'User Registration Form',
+        'project5-desc': `
+            In this project, I present a user registration form in Excel created using VBA (Modules, UserForm, and data validation in some fields).
+            The form is launched by pressing a button, and after filling it out, clicking SAVE sends the data to the "registro" table in the DATA sheet 
+            (all fields are required except for Phone Number in this case).
+        `,
+        'project5-view': 'View More',
+        'project5-download': 'Download',
+
+        // SKILLS
+        'skills-title': 'Skills',
+        'skills-desc': 'Speech, Audio, Video and Image to Text - Text to Speech',
+        'skills-strong': 'Strong',
+        'skills-beginner': 'Beginner',
+        'skills-other': 'Others',
+
+        // EXPERIENCE
+        'experience-title': 'Work Experience',
+        'experience-role-2': "Electrician Technician + Electronics + IT",
+        'experience-text-2': `2023 – 2025<br> Electrical installations and repairs for private clients.<br> Repair and maintenance of electrical systems.<br> PC maintenance, software installation, system configuration.<br> General technical support.`,
+        'experience-role-3': 'IT Instructor – Office Software and Administrative Secretarial Skills',
+        'experience-text-3': `
+            2020 – 2023 <br>
+            Personalized classes for adults and youths, tailored to their beginner's level of knowledge.<br> 
+            Practical teaching of tools such as Microsoft Word, Excel, PowerPoint and file management.
+        `,
+
+        // CONTACT
+        'contact-title': 'Contact'
+    }
+};
+
+    document.getElementById('lang-toggle').addEventListener('click', () => {
+        currentLang = currentLang === 'es' ? 'en' : 'es';
+        const texts = translations[currentLang];
+
+        for (const id in texts) {
+            const el = document.getElementById(id);
+            if (el) {
+                if (id === 'project2-list' || id === 'about-desc' || id.startsWith('experience-text')) {
+                    el.innerHTML = texts[id]; /* usa innerHTML para listas y textos con <br> */
+                } else {
+                    el.textContent = texts[id]; // para textos normales
+                }
+            }
+        }
+
+        document.getElementById('lang-toggle').textContent = currentLang === 'es' ? 'English' : 'Español';
+    });
+</script>
+
+    
+
+
+</body>
+</html>

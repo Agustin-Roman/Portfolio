@@ -1,146 +1,173 @@
-/* delete */
-/* .segoe-black {
-    font-family: 'Segoe UI Black', 'Segoe UI', sans-serif;
-} */
-/* Estilos generales */
+/* ESTILOS GENERALES */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
 }
 
-/* Header */
+/* HEADER (Encabezado principal) */
 #header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    border-bottom: 3px solid red;
+background-color: #333;         /* Fondo oscuro */
+color: #fff;                    /* Texto blanco */
+text-align: center;            /* Centrar contenido */
+padding: 1rem 0;               /* Espaciado vertical */
+border-bottom: 3px solid red;  /* Línea roja inferior */
 }
 
-/* Nombre y portafolio */
+
+/* NOMBRE Y TÍTULO DE PORTAFOLIO */
+.menu {
+  position: relative;
+}
+.menu-btn > * {
+  padding: 2.4px 0; /* 1.2rem */
+}
+.menu-name {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 .name {
-    font-size: 2 rem; /* Cambia el valor según el tamaño que prefieras */
-    margin: 0;
-    margin-bottom: -5;
-    text-decoration: none;
-    text-decoration: underline;
+font-size: 2rem;               /* Tamaño de fuente grande (corregido el espacio) */
+margin: 0;
+margin-bottom: -5px;          /* Ajuste fino de espacio inferior */
+text-decoration: underline;   /* Subrayado */
 }
-
 .port {
-    margin: 0;
-    margin-top: -4px;
+margin: 0;
+margin-top: -4px;             /* Ajuste fino de espacio superior */
 }
 
-/* Navegación */
+/* NAVEGACIÓN*/
 nav .navbar-nav {
-    justify-content: center; /* Centramos los elementos de la navbar */
+justify-content: center;      /* Centrar elementos del navbar */
 }
-
 .navbar-nav .nav-link {
-    color: #fff;
+color: #fff;                  /* Enlaces blancos */
 }
 
-/* Secciones */
+/* SECCIONES GENERALES */
 section {
-    padding: 2rem 1rem;
+padding: 2rem 1rem;           /* Espaciado interno */
 }
-
 #about, #projects, #skills, #experience {
-    background: #f7f7f7;
-    margin: 1rem 0;
+background: #f7f7f7;          /* Fondo gris claro */
+margin: 1rem 0;               /* Separación vertical */
 }
+
+/* Contenido interno scrollable en proyectos */
 #projects .card-body {
-  overflow-y: auto;
-  padding-right: 1rem;
+overflow-y: auto;
+padding-right: 1rem;
 }
 
-
+/* Tarjetas de proyecto */
 .card {
-  overflow: auto;
-  height: 580px;
+overflow: auto;
+height: 580px;
 }
 
-
-/* Proyectos */
+/* Cada bloque de proyecto */
 .project {
-    background: #fff;
-    padding: 1rem;
-    margin: 1rem 0;
-    border: 1px solid #ddd;
+background: #fff;
+padding: 1rem;
+margin: 1rem 0;
+border: 1px solid #ddd;       /* Borde gris claro */
 }
 
-/* Pie de página */
+/* PIE DE PÁGINA (Footer) */
 footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
+background: #333;
+color: white;
+text-align: center;
+padding: 1rem 0;
 }
 
+/* Enlaces dentro de la lista del footer */
 .footlist li a {
-    color: #fff;
-    text-decoration: none;
+color: #fff;
+text-decoration: none;
 }
 
+/* SECCIÓN DE CONTACTO */
 
-/* Alinear los íconos y el texto de contacto */
-/* .contact-item {
-    display: flex;
-    align-items: center;
-    gap: 8px; 
-  }   *//* Separación entre el ícono y el texto */
+/* Contenedor de contacto */
+.contac {
+border-bottom: 2px solid rgba(255, 0, 0, 0.5);  /* Línea roja semitransparente */
+border-radius: 10px;
+max-width: 900px;           /* Limita el ancho en pantallas grandes */
+margin: 0 auto;             /* Centra horizontalmente */
+padding: 0 1rem;            /* Espaciado lateral opcional */
+}
+
+/* Ítems de contacto (teléfono, email, GitHub) */
+.contact-item {
+display: flex;
+align-items: center;
+gap: 8px;                   /* Espacio entre ícono y texto */
+}
+
+/* Íconos */
+.contact-icon {
+width: 30px;
+height: 30px;
+}
+
+.contact-icono {                /* Variante para ícono de GitHub */
+width: 35px;
+height: 35px;
+}
+
+/* Texto de contacto */
+.contact-text {
+word-break: break-word;     /* Rompe palabras largas si es necesario */
+overflow-wrap: break-word;  /* Lo mismo, más compatible */
+max-width: 100%;
+display: inline-block;
+text-align: left;
+font-size: 1rem;
+}
+
+/* Responsive para móviles */
 @media (max-width: 576px) {
-  .footer-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-item {
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 10px;
-  }
+.footer-list {
+flex-direction: column;   /* Apila los ítems verticalmente */
+align-items: center;      /* Centra cada ítem */
 }
-  
-  /* Tamaño de los íconos */
-  .contact-icon {
-    width: 30PX;
-    height: 30PX;
-  }
-  .contact-icono {
-    width: 35PX;
-    height: 35PX;
-  }
 
-  .contact-text {
-  word-break: break-word;
-  overflow-wrap: break-word;
-  max-width: 100%;
-  display: inline-block;
-  text-align: left;
-  font-size: 1rem;
-  
+.contact-item {
+justify-content: center;  /* Centrar contenido dentro del ítem */
+width: 100%;
+margin-bottom: 10px;
 }
-  .contac {
-    border-bottom: 2px solid rgba(255, 0, 0, 0.5);
-    border-radius: 10px;
-  }
-  /* enlace inicio */
-  .start {
-    margin: 20px; /* Ajusta el valor según sea necesario */
-    /* background-color: #ff000080; */
-    border-bottom: 2px solid rgba(255, 0, 0, 0.5);
-    padding: 0px; /* Para crear un espacio interno */
-    border-radius: 5px; /* Opcional: esquinas redondeadas */
-  }
-    .start a {
-    text-decoration: none;
-    color: white;
-  }
+}
+
+/* ENLACE AL INICIO */
+.start {
+margin: 20px;
+border-bottom: 2px solid rgba(255, 0, 0, 0.5);
+padding: 0px;
+border-radius: 5px;
+}
+
+.start a {
+text-decoration: none;
+color: white;
+}
+
 /* 
-  h2,h1 {
-    font-family: 'Segoe UI', sans-serif;
+COMENTARIOS INACTIVOS / ELIMINABLES
+*/
+/*
+.segoe-black {
+font-family: 'Segoe UI Black', 'Segoe UI', sans-serif;
 }
 
- */
+h1, h2 {
+font-family: 'Segoe UI', sans-serif;
+}
+*/

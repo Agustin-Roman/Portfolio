@@ -1,27 +1,57 @@
 /* ESTILOS GENERALES */
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+/* _______________________________________________________________________________________________________________ */
 
 /* HEADER (Encabezado principal) */
 #header {
-background-color: #333;         /* Fondo oscuro */
-color: #fff;                    /* Texto blanco */
-text-align: center;            /* Centrar contenido */
-padding: 1rem 0;               /* Espaciado vertical */
-border-bottom: 3px solid red;  /* Línea roja inferior */
+  background-color: #333;         /* Fondo oscuro */
+  color: #fff;                    /* Texto blanco */
+  text-align: center;             /* Centrar contenido */
+  padding: 1rem 0;                /* Espaciado vertical */
+  border-bottom: 3px solid red;   /* Línea roja inferior */
 }
 
+/* _______________________________________________________________________________________________________________ */
+/* NAVEGACIÓN */
 
+nav .navbar-nav {
+  justify-content: center;       /* Centrar elementos del navbar */
+}
+
+.navbar-nav .nav-link {
+  color: #fff;                   /* Enlaces blancos */
+}
+
+/* _______________________________________________________________________________________________________________ */
 /* NOMBRE Y TÍTULO DE PORTAFOLIO */
+.name {
+  font-size: 2rem;               /* Tamaño de fuente grande */
+  margin: 0;
+  margin-bottom: -5px;           /* Ajuste fino de espacio inferior */
+  text-decoration: underline;    /* Subrayado */
+}
+
+.port {
+  margin: 0;
+  margin-top: -4px;              /* Ajuste fino de espacio superior */
+}
+
+/* _______________________________________________________________________________________________________________ */
+/* MENÚ / BOTÓN / NOMBRE CENTRADO */
+
 .menu {
   position: relative;
 }
+
 .menu-btn > * {
-  padding: 2.4px 0; /* 1.2rem */
+  padding: 2.4px 0;              /* 1.2rem */
 }
+
 .menu-name {
   position: absolute;
   left: 50%;
@@ -31,143 +61,153 @@ border-bottom: 3px solid red;  /* Línea roja inferior */
   font-weight: bold;
 }
 
-.name {
-font-size: 2rem;               /* Tamaño de fuente grande (corregido el espacio) */
-margin: 0;
-margin-bottom: -5px;          /* Ajuste fino de espacio inferior */
-text-decoration: underline;   /* Subrayado */
-}
-.port {
-margin: 0;
-margin-top: -4px;             /* Ajuste fino de espacio superior */
+/* _______________________________________________________________________________________________________________ */
+
+/* DROPDOWN */
+.dropdown-menu {
+  background-color: #212529;     /* fondo oscuro como tu navbar */
+  border: 1px solid #495057;
 }
 
-/* NAVEGACIÓN*/
-nav .navbar-nav {
-justify-content: center;      /* Centrar elementos del navbar */
+.dropdown-item {
+  color: #f8f9fa;
 }
-.navbar-nav .nav-link {
-color: #fff;                  /* Enlaces blancos */
+
+.dropdown-item:hover {
+  background-color: #343a40;
+  color: #ffffff;
 }
+
+/* Oculta la flechita del dropdown */
+#cvDropdown.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* Opcional: si quieres un poquito de espacio extra o ajustar el padding */
+/* Hace que el botón dropdown tenga exactamente el mismo padding vertical que los demás */
+#cvDropdown {
+  padding-right: 0.75rem;        /* ajusta si ves que queda muy pegado */
+  padding-top: 2.4px !important;    /* Igual que tu regla general */
+  padding-bottom: 2.4px !important; /* Igual que tu regla general */
+  line-height: normal;              /* Evita que el line-height agregue altura extra */
+}
+
+/* _______________________________________________________________________________________________________________ */
 
 /* SECCIONES GENERALES */
 section {
-padding: 2rem 1rem;           /* Espaciado interno */
+  padding: 2rem 1rem;            /* Espaciado interno */
 }
+
 #about, #projects, #skills, #experience {
-background: #f7f7f7;          /* Fondo gris claro */
-margin: 1rem 0;               /* Separación vertical */
+  background: #f7f7f7;           /* Fondo gris claro */
+  margin: 1rem 0;                /* Separación vertical */
 }
 
 /* Contenido interno scrollable en proyectos */
 #projects .card-body {
-overflow-y: auto;
-padding-right: 1rem;
+  overflow-y: auto;
+  padding-right: 1rem;
 }
 
 /* Tarjetas de proyecto */
 .card {
-overflow: auto;
-height: 580px;
+  overflow: auto;
+  height: 580px;
 }
 
 /* Cada bloque de proyecto */
 .project {
-background: #fff;
-padding: 1rem;
-margin: 1rem 0;
-border: 1px solid #ddd;       /* Borde gris claro */
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #ddd;        /* Borde gris claro */
 }
 
-/* PIE DE PÁGINA (Footer) */
-footer {
-background: #333;
-color: white;
-text-align: center;
-padding: 1rem 0;
-}
-
-/* Enlaces dentro de la lista del footer */
-.footlist li a {
-color: #fff;
-text-decoration: none;
-}
+/* _______________________________________________________________________________________________________________ */
 
 /* SECCIÓN DE CONTACTO */
 
 /* Contenedor de contacto */
 .contac {
-border-bottom: 2px solid rgba(255, 0, 0, 0.5);  /* Línea roja semitransparente */
-border-radius: 10px;
-max-width: 900px;           /* Limita el ancho en pantallas grandes */
-margin: 0 auto;             /* Centra horizontalmente */
-padding: 0 1rem;            /* Espaciado lateral opcional */
+  border-bottom: 2px solid rgba(255, 0, 0, 0.5);  /* Línea roja semitransparente */
+  border-radius: 10px;
+  max-width: 900px;           /* Limita el ancho en pantallas grandes */
+  margin: 0 auto;             /* Centra horizontalmente */
+  padding: 0 1rem;            /* Espaciado lateral opcional */
 }
 
 /* Ítems de contacto (teléfono, email, GitHub) */
 .contact-item {
-display: flex;
-align-items: center;
-gap: 8px;                   /* Espacio entre ícono y texto */
+  display: flex;
+  align-items: center;
+  gap: 8px;                   /* Espacio entre ícono y texto */
 }
 
 /* Íconos */
 .contact-icon {
-width: 30px;
-height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
-.contact-icono {                /* Variante para ícono de GitHub */
-width: 35px;
-height: 35px;
+.contact-icono {              /* Variante para ícono de GitHub */
+  width: 35px;
+  height: 35px;
 }
 
 /* Texto de contacto */
 .contact-text {
-word-break: break-word;     /* Rompe palabras largas si es necesario */
-overflow-wrap: break-word;  /* Lo mismo, más compatible */
-max-width: 100%;
-display: inline-block;
-text-align: left;
-font-size: 1rem;
+  word-break: break-word;     /* Rompe palabras largas si es necesario */
+  overflow-wrap: break-word;  /* Lo mismo, más compatible */
+  max-width: 100%;
+  display: inline-block;
+  text-align: left;
+  font-size: 1rem;
 }
 
-/* Responsive para móviles */
-@media (max-width: 576px) {
-.footer-list {
-flex-direction: column;   /* Apila los ítems verticalmente */
-align-items: center;      /* Centra cada ítem */
+/* _______________________________________________________________________________________________________________ */
+
+/* PIE DE PÁGINA (Footer) */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
 }
 
-.contact-item {
-justify-content: center;  /* Centrar contenido dentro del ítem */
-width: 100%;
-margin-bottom: 10px;
+/* Enlaces dentro de la lista del footer */
+.footlist li a {
+  color: #fff;
+  text-decoration: none;
 }
-}
+
+/* _______________________________________________________________________________________________________________ */
 
 /* ENLACE AL INICIO */
 .start {
-margin: 20px;
-border-bottom: 2px solid rgba(255, 0, 0, 0.5);
-padding: 0px;
-border-radius: 5px;
+  margin: 20px;
+  border-bottom: 2px solid rgba(255, 0, 0, 0.5);
+  padding: 0px;
+  border-radius: 5px;
 }
 
 .start a {
-text-decoration: none;
-color: white;
+  text-decoration: none;
+  color: white;
 }
 
-/* 
-COMENTARIOS INACTIVOS / ELIMINABLES
-*/
-/*
-.segoe-black {
-font-family: 'Segoe UI Black', 'Segoe UI', sans-serif;
-}
+/* _______________________________________________________________________________________________________________ */
 
-h1, h2 {
-font-family: 'Segoe UI', sans-serif;
+/* Responsive para móviles */
+@media (max-width: 576px) {
+  .footer-list {
+    flex-direction: column;   /* Apila los ítems verticalmente */
+    align-items: center;      /* Centra cada ítem */
+  }
+
+  .contact-item {
+    justify-content: center;  /* Centrar contenido dentro del ítem */
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
-*/

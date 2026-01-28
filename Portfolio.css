@@ -62,10 +62,10 @@ nav .navbar-nav {
 }
 
 /* _______________________________________________________________________________________________________________ */
-
 /* DROPDOWN */
+
 .dropdown-menu {
-  background-color: #212529;     /* fondo oscuro como tu navbar */
+  background-color: #333;     /* fondo oscuro como tu navbar */
   border: 1px solid #495057;
 }
 
@@ -74,7 +74,7 @@ nav .navbar-nav {
 }
 
 .dropdown-item:hover {
-  background-color: #343a40;
+  background-color: #ff0000;
   color: #ffffff;
 }
 
@@ -91,6 +91,14 @@ nav .navbar-nav {
   padding-bottom: 2.4px !important; /* Igual que tu regla general */
   line-height: normal;              /* Evita que el line-height agregue altura extra */
 }
+
+.custom-btn {
+    text-decoration: underline;
+    text-underline-offset: 12px; /* separa el subrayado */
+    border: none !important;
+    box-shadow: none !important;
+}
+
 
 /* _______________________________________________________________________________________________________________ */
 

@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'project1-view': 'Ver Más',
             'project1-download': 'Descargar',
 
-            'project2-title': 'Goals',
+            'project2-title': 'Metas',
             'project2-desc': 'Este proyecto de Excel permite visualizar datos y comparar el rendimiento frente a metas, usando gráficos y formato condicional para facilitar el análisis. El archivo contiene tres hojas:',
             'project2-list': `
                 <li>Metas variables: Compara ventas reales vs. proyecciones por departamento.</li>
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // HABILIDADES
             'skills-title': 'Habilidades',
-            'skills-desc': 'Voz, Audio, Vídeo e Imagen a texto - Texto a voz',
+            'skills-desc': `<br> Voz, Audio, Vídeo e Imagen a texto - Texto a voz <br>`,
             'skills-strong': 'Fuertes',
             'skills-beginner': 'Principiante',
             'skills-other': 'Otros',
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // SKILLS
             'skills-title': 'Skills',
-            'skills-desc': 'Speech, Audio, Video and Image to Text - Text to Speech',
+            'skills-desc': '<br> Speech, Audio, Video and Image to Text - Text to Speech',
             'skills-strong': 'Strong',
             'skills-beginner': 'Beginner',
             'skills-other': 'Others',
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const element = document.getElementById(id);
             if (element) {
                 // Usar innerHTML cuando hay <br>, <li>, etc.
-                if (['project2-list', 'about-desc'].includes(id) || id.startsWith('experience-text')) {
+                if (['project2-list', 'about-desc', 'skills-desc'].includes(id) || id.startsWith('experience-text')) {
                     element.innerHTML = texts[id];
                 } else {
                     element.textContent = texts[id];

@@ -1,5 +1,22 @@
-
 // script.js
+
+/* RELOJ*/
+
+function actualizarReloj() {
+  const ahora = new Date();
+
+  const opciones = {
+    dateStyle: "medium",
+    timeStyle: "medium"
+  };
+
+  const formato = new Intl.DateTimeFormat(navigator.language, opciones);
+  document.getElementById("reloj").textContent = formato.format(ahora);
+}
+
+setInterval(actualizarReloj, 1000);
+actualizarReloj();
+
 document.addEventListener('DOMContentLoaded', () => {
     let currentLang = 'es';
 
@@ -16,10 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
             // SOBRE MÍ
             'about-title': 'Sobre Mí',
             'about-desc': `
-                Busco mejores oportunidades de trabajo online a través de Freelancer para adquirir experiencia y crecer profesionalmente.<br>
-                Tengo la disponibilidad necesaria para concentrarme plenamente en mi primer trabajo y una buena organización para afrontar futuros proyectos con la misma energía y compromiso.<br>
-                Tengo experiencia en la enseñanza y el uso de herramientas de Microsoft Office (Word, Excel, Publisher, etc.), así como conocimientos de organización digital y gestión de archivos.<br>
-                Si te interesa lo que ves aquí, hablemos y veamos si podemos hacer algo.
+                 Soy un profesional enfocado en la gestión y organización de datos mediante Excel y demás 
+                 herramientas de office mi objetivo es la finalización efectiva de los proyectos bajo los estándares
+                 requeridos, transformando información desordenada en soluciones claras y listas para el análisis o 
+                 la presentación.
+                 <br>
+                 Actualmente continúo fortaleciendo mi perfil de forma autodidacta en programación y análisis de
+                 datos, integrando nuevas tecnologías para ofrecer soluciones cada vez más eficientes y técnicas.
+
             `,
 
             // PROYECTOS
@@ -58,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 En este proyecto te presento un formulario de registro de usuario en Excel creado usando VBA (Módulos, UserForm y validación de datos en algunos campos).
                 El formulario se inicia al presionar el botón y luego de rellenar el formulario presionar SAVE para enviar los datos a la tabla registro de la hoja DATA 
                 (todos los campos son obligatorios excepto Phone Number en este caso).
+                <br> ⚠ En caso de que pida acceder iniciar sesion puede darle F5 y dar al boton "Mirar en youtube"
             `,
             'project5-view': 'Ver Más',
             'project5-download': 'Descargar',
@@ -94,10 +116,13 @@ document.addEventListener('DOMContentLoaded', () => {
             // ABOUT ME
             'about-title': 'About Me',
             'about-desc': `
-                I'm looking for better opportunities in online work through Upwork, aiming to add experience and grow professionally.<br>
-                I have the necessary availability to focus fully on the first job, and good organization to face future projects with the same energy and commitment.<br>
-                I have experience teaching and using Microsoft Office tools (Word, Excel, Publisher, etc.) as well as knowledge of digital organization and file management.<br>
-                If you are interested in what you see here, let's talk and see if we can achieve something together.
+                I am a professional focused on data management and organization using Excel and other Office tools. 
+                My goal is the effective completion of projects under the required standards, transforming 
+                disorganized information into clear solutions ready for analysis or presentation.
+                <br>
+                Currently, I continue to strengthen my profile in a self-taught manner in programming and data
+                analysis, integrating new technologies to provide increasingly efficient and technical solutions.
+
             `,
 
             // PROJECTS
@@ -136,6 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 In this project, I present a user registration form in Excel created using VBA (Modules, UserForm, and data validation in some fields).
                 The form is launched by pressing a button, and after filling it out, clicking SAVE sends the data to the "registro" table in the DATA sheet 
                 (all fields are required except for Phone Number in this case).
+                <br> ⚠ If prompted to sign in, refresh the page with F5 and click the Watch on YouTube button.
             `,
             'project5-view': 'View More',
             'project5-download': 'Download',
@@ -177,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const element = document.getElementById(id);
             if (element) {
                 // Usar innerHTML cuando hay <br>, <li>, etc.
-                if (['project2-list', 'about-desc', 'skills-desc'].includes(id) || id.startsWith('experience-text')) {
+                if (['project2-list', 'about-desc', 'skills-desc', 'project5-desc'].includes(id) || id.startsWith('experience-text')) {
                     element.innerHTML = texts[id];
                 } else {
                     element.textContent = texts[id];

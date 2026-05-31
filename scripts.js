@@ -42,7 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
                  datos, integrando nuevas tecnologías para ofrecer soluciones cada vez más eficientes y técnicas.
 
             `,
-
+            // CERTIFICADOS
+            'view-certificates': 'Ver Certificados',
+            
             // PROYECTOS
             'projects-title': 'Proyectos',
 
@@ -124,6 +126,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 analysis, integrating new technologies to provide increasingly efficient and technical solutions.
 
             `,
+            // CERTIFICATES
+            'view-certificates': 'View Certificates',
 
             // PROJECTS
             'projects-title': 'Projects',

@@ -4,17 +4,17 @@ const certificates = [
     {
         id: 1,
         title: "Web Development",
-        image: "/docs/Certificado de Desarrollo Web.svg"
+        image: "docs/Certificado de Desarrollo Web.svg"
     },
     {
         id: 2,
         title: "Office",
-        image: "/docs/operador de office plus.jpg"
+        image: "docs/operador de office plus.jpg"
     },
     {
         id: 3,
         title: "PC Repair",
-        image: "/docs/rpc.jpg"
+        image: "docs/rpc.jpg"
     }
 
 ];

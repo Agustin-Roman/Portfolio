@@ -4,20 +4,27 @@ const certificates = [
     {
         id: 1,
         title: "Web Development",
-        image: "docs/Certificado de Desarrollo Web.svg"
+        image: "docs/web-dev.svg"
     },
     {
         id: 2,
-        title: "Office",
-        image: "docs/operador de office plus.jpg"
+        title: "Office Suite",
+        image: "docs/office-suite.jpg"
     },
     {
         id: 3,
         title: "PC Repair",
         image: "docs/rpc.jpg"
+    },
+    {
+        id: 4,
+        title: "Administrative & Management IT",
+        image: "docs/admin-gestion.jpg"
     }
 
 ];
+/* Operador de Informática para Administración y Gestión */
+
 
 const grid = document.getElementById('certificates-grid');
 const modal = new bootstrap.Modal(document.getElementById('certModal'));
